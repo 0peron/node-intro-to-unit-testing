@@ -1,11 +1,10 @@
 const should = require('chai').should();
 
-const adder = require('../fizzBuzzer');
+const fizzBuzzer = require('../fizzBuzzer');
 
 
 describe('fizzBuzzer', function () {
 
-    // test the normal case
     it('should return "fizz-buzz"', function () {
         [15, 30, 45].forEach(function (input) {
             fizzBuzzer(input).should.equal('fizz-buzz');

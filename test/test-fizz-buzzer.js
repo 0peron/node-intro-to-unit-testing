@@ -26,12 +26,4 @@ describe('fizzBuzzer', function () {
             fizzBuzzer(input).should.equal(input);
         });
     });
-    it('should produce error if input isn\'t number', function () {
-
-        const badInputs = [true, false, 'cat', function () {}, [1, 2, 3]] badInputs.forEach(function (input) {
-            (function () {
-                fizzBuzzer(input)
-            }).should.throw(Error);
-        });
-    });
 });
